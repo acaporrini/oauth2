@@ -31,7 +31,7 @@ module OAuth2
       @site = opts.delete(:site)
       ssl = opts.delete(:ssl)
       @options = {:authorize_url    => '/o/oauth2/v2/auth',
-                  :token_url        => '/oauth/token',
+                  :token_url        => '/oauth2/v3/tokeninfo',
                   :token_method     => :post,
                   :connection_opts  => {},
                   :connection_build => block,
